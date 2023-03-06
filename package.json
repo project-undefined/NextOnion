@@ -1,7 +1,7 @@
 {
   "name": "daodtp",
   "version": "1.0.0",
-  "description": "decentralized, anonymouse, and onionless data transport protocol",
+  "description": "decentralized, anonymous, and onionless data transport protocol",
   "main": "./src/index.js",
   "type": "module",
   "scripts": {
