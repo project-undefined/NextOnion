@@ -56,6 +56,6 @@ Plus, the observer can be masked as a regular spammer; therefore, further helpin
 
 The observer is also in charge of reading incoming messages from other users. 
 
-(NOTE: this will be explained in more depth later on, but for now, this is just the general framework. )
+(NOTE: protocol will be explained in more depth later on, but for now, this is just the general framework. )
 
 
