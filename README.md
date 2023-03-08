@@ -25,7 +25,7 @@ One thread is what I call the observer, and the other is the sender.
 
 The observer connects via MQTT to an iota node, and its IP address can be seen.
 
-On the other hand, the sender can only send messages, but cannot receive anything (and I mean ANYTHING). 
+On the other hand, the sender can only send messages, but cannot receive anything. 
 
 The sender sends messages to an IOTA network through a proxy that replaces its IP in the header of the IP sent IP packet. 
 
@@ -41,7 +41,7 @@ In this case, the observer monitors all of the events on the network.
 
 So, if the data was successfully sent, the observer will receive it. 
 
-And if the server receives it within the next 1-2 milestones (might be changed as I learn more about how IOTA works) on the network, then it will confirm with the sender.
+And if the server receives it within the next 1-2 milestones on the network, then it will confirm with the sender.  (might be changed as I learn more about how IOTA works)
 
 If it does not, then it will tell the sender to again and repeat this until the data is successfully sent. 
 
