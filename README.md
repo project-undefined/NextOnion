@@ -4,7 +4,7 @@ Decentralized, Anonymous, and onion-less, data transport protocol.
 Used for the Undedfined Messaging app. 
 
 # Status
-Right now, have just implemented simple MQTT with the MQTT.js library provided by IOTA.
+Right now, have just implemented simple MQTT with the iota.rs library provided by IOTA.
 Other than that, the protocol has not been developed program-wise. 
 It's a pretty simple protocol, so it shouldn't take an obsessivly long time to make (probably ;)).
 
