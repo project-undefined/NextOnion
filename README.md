@@ -8,7 +8,7 @@ Right now, have just implemented the simple MQTT example from the iota.rs librar
 Other than that, the protocol has not been developed program-wise. 
 It's a pretty simple protocol, so it shouldn't take an obsessivly long time to make (probably ;)).
 
-# Notice
+# DISCLAIMER
 There is no guarentee that this protocol will acctually work, it is a relitively new idea. 
 
 # LICENSING NOTICE
