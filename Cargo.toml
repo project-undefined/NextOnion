@@ -1,11 +1,11 @@
 [package]
-name = "daoDTP"
+name = "DAODTP"
 version = "0.1.0"
 edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-iota-client = { git = "https://github.com/iotaledger/iota.rs", branch = "develop", features=["mqtt"] }
-tokio = { version = "1.26.0", features = ["full"] }
-serde_json = "1.0"
+iota-client = { git = "https://github.com/iotaledger/iota.rs", branch = "production", features=["mqtt"] }
+etherparse = "0.13"
+rand = "0.8.5"

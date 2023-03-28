@@ -1,4 +1,6 @@
 # daoDTP
+Status: in-progress
+
 Implementation of the doadtp protocol, a new innovation by Project Undefined.
 Decentralized, Anonymous, and onion-less, data transport protocol. 
 Used for the Undedfined Messaging app. 
