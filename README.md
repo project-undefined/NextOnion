@@ -17,23 +17,24 @@ There is no guarentee that this protocol will acctually work, it is a relitively
 This project is licensed under the Apache-2.0-NoHarm License, found in License.md
 
 # HOW IT WORKS
-VISUAL COMING SOON. 
+Note: flowchart is in development, this just illustrates the GENERAL idea
+[flowchart-outline.png](flowchart)
 
 In short:
 
-The client machine handles two-three threads, each a separate connection to the IOTA network (connected to separate nodes).
+The client machine handles two-three processes, each a separate connection to the IOTA network (connected to separate nodes).
 
-One thread is what I call the observer, and the other is the sender. 
+One process is what I call the observer, and the other is the sender. 
 
 The observer connects via MQTT to an iota node, and its IP address can be seen.
 
-On the other hand, the sender can only send messages, but cannot receive anything. 
+On the other hand, the other process, the sender, can only send messages, but cannot receive anything. 
 
-The sender sends messages to an IOTA network through a proxy that replaces its IP in the header of the IP sent IP packet. 
+The sender creates a spoofed packet and sends that message to a dedicated node (OVERFLOW) on the iota messages.
 
-Well, since the node has no idea what the real IP is, an ACK response cannot be received by the sender. 
+Well, since the node has no idea what the real IP is, it cannot communicate with the user. 
 
-Therefore, the node does not know who actually sent the message, but the sender does not know if the node even received or accepted the message.
+Therefore, the node does not know who actually sent the message, while the sender does not know if the node even received or accepted the message.
  
 That's where the observer comes in.
 
@@ -45,16 +46,13 @@ So, if the data was successfully sent, the observer will receive it.
 
 And if the server receives it within the next 1-2 milestones on the network, then it will confirm with the sender.  (might be changed as I learn more about how IOTA works)
 
-If it does not, then it will tell the sender to again and repeat this until the data is successfully sent. 
+If it does not, then it will tell the sender to again repeat this until the data is successfully sent. 
 
 The result is, no node knows who actually sent the original message. 
 
-The only possible metadata that can be collected is when the observer connects to the network, which is practically useless because all it does is read 
-all events/messages from the network. 
+The only possible metadata that can be collected is when and how long the observer connects to the network and how long. 
 
 The node the observer is connected to does not know which data the observer is using, so it is unidentifiable. 
-
-Plus, the observer can be masked as a regular spammer; therefore, further helping it stay anonymous. 
 
 The observer is also in charge of reading incoming messages from other users. 
 
