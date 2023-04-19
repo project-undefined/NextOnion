@@ -18,7 +18,7 @@ This project is licensed under the Apache-2.0-NoHarm License, found in License.m
 
 # HOW IT WORKS
 Note: flowchart is in development, this just illustrates the GENERAL idea
-[flowchart-outline.png](flowchart)
+[flowchart-outline](flowchart-outline.png)
 
 In short:
 
