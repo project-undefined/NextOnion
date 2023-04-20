@@ -30,7 +30,7 @@ The observer connects via MQTT to an iota node, and its IP address can be seen.
 
 On the other hand, the other process, the sender, can only send messages, but cannot receive anything. 
 
-The sender creates a spoofed packet and sends that message to a dedicated node (OVERFLOW) on the iota messages.
+The sender creates a spoofed packet and sends that message to a dedicated node (OVERFLOW) on the iota network.
 
 Well, since the node has no idea what the real IP is, it cannot communicate with the user. 
 
