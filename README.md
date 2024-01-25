@@ -2,6 +2,7 @@
 Status: inactive
 
 Implementation of the NextOnion protocol.
+(the name is just a placeholder for now)
 
 # Note on the name change
 Yeah, the previous one was kinda dumb and misleading.
