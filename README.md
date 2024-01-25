@@ -1,9 +1,10 @@
-# daoDTP
-Status: in-progress
+# NextOnion
+Status: inactive
 
-Implementation of the doadtp protocol, a new innovation by Project Undefined.
-Decentralized, Anonymous, and onion-less, data transport protocol. 
-Used for the Undedfined Messaging app. 
+Implementation of the NextOnion protocol.
+
+# Note on the name change
+Yeah, the previous one was kinda dumb and misleading.
 
 # Status
 Right now, have just implemented the simple MQTT example from the iota.rs library provided by IOTA.
